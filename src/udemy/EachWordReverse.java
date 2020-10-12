@@ -3,7 +3,9 @@ package udemy;
 public class EachWordReverse {
 
     public static void main(String[] args) {
-
+        /**
+         * Each word reverse
+         */
         String s = "Java Programming";
         String reverseWord = "";
 
@@ -24,5 +26,20 @@ public class EachWordReverse {
 
         System.out.println(reverseWord);
 
+        /**
+         * Sentence reverse
+         */
+
+        String sentence = "Am using intellij";
+        String result  = "";
+
+         String[] arr =sentence.split(" ");
+
+        for(int k=arr.length-1;k>=0;k--)
+        {
+            result = result + arr[k] + " ";
+        }
+
+        System.out.println("Sentence reverse: " + result);
     }
 }
