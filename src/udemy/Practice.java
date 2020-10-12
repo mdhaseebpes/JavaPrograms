@@ -6,25 +6,19 @@ import java.util.Scanner;
 public class Practice {
 
       public static void main(String args[]) {
-       String str = "Java Programming";
-       String reverseWord = "";
+          System.out.println("**********");
 
-       String[] words = str.split(" ");
+          for(int i =1;i<=5;i++)
+          {
+              for(int j=1;j<=i;j++)
+              {
+                  System.out.print(i + " ");
+                  System.out.print("\t");
+              }
+              System.out.println();
+          }
 
-
-       for(int i=0;i<words.length;i++)
-       {
-           String word = words[i];
-           String reverse = "";
-
-           for(int j=word.length()-1;j>=0;j--)
-           {
-               reverse  = reverse + word.charAt(j);
-           }
-
-           reverseWord = reverseWord + reverse + " ";
-       }
-
-        System.out.println("Reverse words " + reverseWord);
+          System.out.println("**********");
+      }
     }
 }
