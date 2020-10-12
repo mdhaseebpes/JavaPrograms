@@ -5,14 +5,8 @@ import java.util.Scanner;
 
 public class Practice {
 
-    /**
-     * 2 14 25
-     * 23 14 17
-     * 11 112 19
-     * */
-
-    public static void main(String args[]) {
-       String str = "Aliza Fathima";
+      public static void main(String args[]) {
+       String str = "Java Programming";
        String reverseWord = "";
 
        String[] words = str.split(" ");
