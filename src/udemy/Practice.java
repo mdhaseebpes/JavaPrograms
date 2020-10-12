@@ -11,7 +11,6 @@ public class Practice {
      * 11 112 19
      * */
 
-
     public static void main(String args[]) {
        String str = "Aliza Fathima";
        String reverseWord = "";
