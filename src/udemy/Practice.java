@@ -9,7 +9,9 @@ public class Practice {
        String str = "Java Programming";
        String reverseWord = "";
 
-       String[] words = str.split(" ");
+     /**
+     Sample programming 
+     */
 
 
        for(int i=0;i<words.length;i++)
@@ -17,6 +19,9 @@ public class Practice {
            String word = words[i];
            String reverse = "";
 
+             /**
+     Sample programming 
+     */
            for(int j=word.length()-1;j>=0;j--)
            {
                reverse  = reverse + word.charAt(j);
@@ -25,6 +30,14 @@ public class Practice {
            reverseWord = reverseWord + reverse + " ";
        }
 
-        System.out.println("Reverse words " + reverseWord);
+   /**
+     */
+            
+             /**
+     */
+/**
+     Sample programming 
+     */
+
     }
 }
