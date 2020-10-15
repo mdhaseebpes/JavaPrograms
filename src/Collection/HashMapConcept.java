@@ -23,11 +23,15 @@ public class HashMapConcept {
         Employee emp1 = new Employee("B" ,2 ,"Dev");
         Employee emp2 = new Employee("C" ,3 ,"Admin");
 
+
+
         HashMap<Integer,Employee> h = new HashMap<Integer, Employee>();
 
         h.put(1,emp);
         h.put(2,emp1);
         h.put(3,emp2);
+
+
 
 
         System.out.println(h.toString());

@@ -32,7 +32,6 @@ public class BrokenLinks {
                 System.out.println(url + " -- " + huc.getResponseMessage());
             }
 
-
             if (huc.getResponseCode() >= 400) {
                 System.out.println(url + "---" + huc.getResponseMessage());
             }
@@ -48,8 +47,6 @@ public class BrokenLinks {
 
 
     public static void main(String[] args) {
-
-
 
         System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 

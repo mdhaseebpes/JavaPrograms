@@ -16,7 +16,7 @@ public class MatchingValueArray {
         }
         System.out.println(matching);
       Object[] finalArray = matching.toArray();
-        System.out.println(finalArray);
+       // System.out.println(finalArray);
         for(Object o : finalArray){
             System.out.println(o);
         }
