@@ -21,7 +21,7 @@ public class EachWordReverse {
                 reverse = reverse + word.charAt(j);
             }
 
-            reverseWord = reverseWord + reverse + " ";
+             reverseWord = reverseWord + reverse + " ";
         }
 
         System.out.println(reverseWord);

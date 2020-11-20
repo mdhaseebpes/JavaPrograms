@@ -53,6 +53,7 @@ public class BrokenLinks {
         WebDriver driver = new ChromeDriver();
 
         driver.get(homepage);
+       // driver.navigate(homepage);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 

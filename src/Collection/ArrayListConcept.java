@@ -63,6 +63,33 @@ public class ArrayListConcept {
         list.set(1,"C");
         System.out.println(list);
 
+        System.out.println("************** for loop");
+
+        for(int j=0; j<list.size();j++)
+        {
+            System.out.println(list.get(j));
+
+        }
+
+        System.out.println("******************** for each");
+        for(String e :list)
+        {
+            System.out.println(e);
+        }
+
+        System.out.println("************  Iterator");
+
+        Iterator<String> l = list.iterator();
+
+        while(l.hasNext())
+        {
+           String s =  l.next();
+            System.out.println(s);
+        }
+
+        System.out.println("************************ streams with lambda");
+
+        list.stream().forEach(ele -> System.out.println(ele));
 
 
 
