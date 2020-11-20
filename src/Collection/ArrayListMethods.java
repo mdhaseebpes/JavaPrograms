@@ -11,6 +11,7 @@ public class ArrayListMethods {
         ar1.add("Test");
         ar1.add("Application");
         ar1.add("with automation");
+        ar1.add("using Selenium");
 
         System.out.println(ar1);
 
@@ -18,5 +19,6 @@ public class ArrayListMethods {
        ArrayList<String> clonelist = (ArrayList<String>)ar1.clone();
 
         System.out.println(clonelist);
+        
     }
 }
