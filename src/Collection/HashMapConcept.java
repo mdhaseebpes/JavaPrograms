@@ -47,7 +47,7 @@ public class HashMapConcept {
         HashMap<Integer, String> hm = new HashMap<Integer, String>();
 
         hm.put(1, "Aliza");
-        hm.put(1, "Aliza");
+        hm.put(5, "Aliza");
         hm.put(2, "3 years");
         hm.put(3, "Girl");
         hm.replace(2, "4 years");

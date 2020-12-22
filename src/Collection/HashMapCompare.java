@@ -53,7 +53,7 @@ public class HashMapCompare {
         map5.put(1,"A");
         map5.put(3,"C");
         map5.put(2,"B");
-        map5.put(4,"C");
+        map5.put(4,"A");
 
         System.out.println("*********Compare values using HashSet");
         System.out.println(new HashSet<String>(map4.values()).equals(new HashSet<String>(map5.values())));

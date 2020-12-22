@@ -1,12 +1,11 @@
 package Selenium;
 
+import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -57,9 +56,7 @@ public class BrokenLinks {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-       /* WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(""))));
-*/
+
         List<WebElement> list = driver.findElements(By.tagName("a"));
         System.out.println(list.size());
 

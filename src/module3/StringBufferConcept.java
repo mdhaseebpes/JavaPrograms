@@ -4,7 +4,7 @@ public class StringBufferConcept {
 
     public static void main(String[] args) {
 
-        StringBuffer sb  = new StringBuffer("Interview");
+        StringBuffer sb  = new StringBuffer("Interview Java");
         StringBuffer sb1  = new StringBuffer("Interview Java");
 
         System.out.println(sb==sb1);
