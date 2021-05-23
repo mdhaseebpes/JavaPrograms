@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 class Animal{
+    final String s1 = "first class";
 
 }
 
@@ -24,17 +25,29 @@ public class TestClass  extends Mammal{
 
         //upcasting
 
+        Animal a1  = new Animal();
+        System.out.println(a1.s1);
+
+        Mammal a2 = new Mammal();
+        System.out.println(a2.s1);
+      //  a2.s1 = "second class";
+
+        System.out.println(a2.s1);
+
+
        Mammal m1 = new TestClass();
 
-       Animal a1  = new Mammal();
+       Animal a3  = new Mammal();
 
-       Animal a2 = new TestClass();
+       Animal a4 = new TestClass();
 
        //downcasting -- only upcasted objects can be downcasted
 
         TestClass t1 = (TestClass)m1;
-        Mammal t2  = (Mammal)a1;
-        TestClass t3 = (TestClass)a2;
+        Mammal t2  = (Mammal)a3;
+        TestClass t3 = (TestClass)a4;
+
+
 
 
 

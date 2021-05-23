@@ -32,7 +32,7 @@ public class HashMapConcept {
         h.put(3, emp2);
 
 
-        System.out.println(h.toString());
+        System.out.println(h);
 
         for (Map.Entry<Integer, Employee> e1 : h.entrySet()) {
             int key = e1.getKey();

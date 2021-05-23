@@ -9,7 +9,7 @@ public class DuplicateNumberHashSet {
 
     public static void main(String[] args) {
 
-        int[] a = {2, 2, 3, 4, 5, 3, 4, 4, 5, 5, 5, 6, 9, 6};
+        int[] a = {2, 2, 3, 4, 5, 3, 4, 4, 5, 5, 5, 6, 9, 6,15};
         Set<Integer> hs = new HashSet<Integer>();
 
         for(int i:a)

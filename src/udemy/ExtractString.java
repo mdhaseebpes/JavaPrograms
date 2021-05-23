@@ -1,6 +1,29 @@
 package udemy;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class ExtractString {
+
+    public static String getCurrentDayDate(String type) {
+
+        DateFormat df;
+        if (type.equalsIgnoreCase("DATE")) {
+            df = new SimpleDateFormat("MM/dd/yyyy");
+            Calendar calobj = Calendar.getInstance();
+            return df.format(calobj.getTime());
+        } else if (type.contains("/") || type.contains("y") || type.contains("m") || type.contains("M") || type.contains("d")) {
+            df = new SimpleDateFormat(type);
+            Calendar calobj = Calendar.getInstance();
+            return df.format(calobj.getTime());
+        } else {
+            Date now = new Date();
+            df = new SimpleDateFormat("EEEE");
+            return df.format(now);
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -8,6 +31,13 @@ public class ExtractString {
         String spaces = " java programming for automation ";
         String orderDetails = "Order number is 2345";
 
+
+        String currentDate = getCurrentDayDate("DATE");
+        String Date = currentDate.substring(3,5);
+        System.out.println(Date);
+
+
+        System.out.println("-------------------------------------------");
 
         String firstFour  = str.substring(0,3);
         System.out.println(firstFour);
@@ -30,6 +60,7 @@ public class ExtractString {
         String[] add = test.split(";");
         for (String e : add) {
             System.out.println(e);
+
         }
 
         String data = "xXtestingXxXxJavaxXselenium";
@@ -51,6 +82,19 @@ public class ExtractString {
        String j = String.valueOf(i);
         System.out.println(j+30);
 
+
+
+        String s="oraclE9.9xXpython",t="java6.7xX";
+        s=s.replaceAll("[a-zA-Z]","");
+        t=t.replaceAll("[a-zA-Z]","");
+        System.out.println(s);
+        System.out.println(t);
+        System.out.println(s+t);
+
+        Float val1=Float.parseFloat(s);
+        Float val2=Float.parseFloat(t);
+        System.out.println("output:"+val1+val2);
+        System.out.println(val1+val2);
 
     }
 }

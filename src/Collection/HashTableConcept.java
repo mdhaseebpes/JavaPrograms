@@ -54,7 +54,14 @@ public class HashTableConcept {
         ht.replace(2,"4 years");
         ht.put(1,"Aliza");
 
+        System.out.println("*********Using entry set Hash table*********");
+     for(Map.Entry<Integer, String> m: ht.entrySet()){
+         System.out.println(m.getKey() + " " + m.getValue());
+     }
+
         //Enumeration in hastable is used to iterate values in sequential manner
+
+        System.out.println("******************************");
        Enumeration e = ht.elements();
 
         System.out.println("Enumeration " + e);
@@ -65,6 +72,22 @@ public class HashTableConcept {
 
         Set s =ht.entrySet();
         System.out.println("SET " + s);
+
+
+        Hashtable<String,String> cap = new Hashtable<>();
+
+        System.out.println("Enumeration hashtable");
+
+        cap.put("1","Bangalore");
+        cap.put("2","Chennai");
+        cap.put("3","Delhi");
+
+        Enumeration en = cap.elements();
+
+        while(en.hasMoreElements())
+        {
+            System.out.println(en.nextElement());
+        }
 
 
     }

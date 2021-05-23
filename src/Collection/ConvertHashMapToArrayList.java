@@ -14,6 +14,12 @@ public class ConvertHashMapToArrayList {
         capital.put("UK", "London11");
         capital.put(null, "Bangalore");
 
+
+        for(Map.Entry<String,String> e : capital.entrySet())
+        {
+            System.out.println(e.getKey() + " " + e.getValue());
+        }
+
         System.out.println(capital);
 
         for(Map.Entry<String,String> e : capital.entrySet())
@@ -29,7 +35,7 @@ public class ConvertHashMapToArrayList {
         List<String> p1 = new ArrayList<>(capital.values());
         System.out.println(p1);
 
-        for(String l: p1)
+        for(String l: place)
         {
             System.out.println(l);
         }

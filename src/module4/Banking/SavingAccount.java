@@ -2,6 +2,7 @@ package module4.Banking;
 
 public class SavingAccount extends  Account {
     SavingAccount(long accountno, String name, float balance) {
+
         super(accountno, name, balance);
     }
 

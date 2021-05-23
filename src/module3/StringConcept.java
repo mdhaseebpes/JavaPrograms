@@ -22,6 +22,14 @@ public class StringConcept {
         System.out.println(str2==str3);
         System.out.println(str2.equals(str3));
 
+        System.out.println("***********************************");
+        String qa = "https://qa.healthfusionclaims.com/electronic/userlogin.jsp";
+       // qa.startsWith("https","electronic/");
+        qa.replaceFirst("electronic/","electronic/userlogin.jsp");
+        System.out.println(qa);
+
+
+
 
 
 

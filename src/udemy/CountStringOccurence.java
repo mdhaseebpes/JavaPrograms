@@ -6,7 +6,7 @@ public class CountStringOccurence {
 
     public static void main(String[] args) {
 
-        String occurence = "QAQATTATQAJZJZM";
+        String occurence = "AUTOMATIONENGINEER";
         ArrayList<Character> list  = new ArrayList<Character>();
 
         for(int i=0;i<occurence.length();i++){
@@ -27,5 +27,18 @@ public class CountStringOccurence {
             }
 
         }
+
+        String s1 = "AUTOMATIONENGINEER";
+       for(int i=0;i<s1.length();i++)
+       {
+
+       }
+
+        String s="oraclE9.9",t="java6.7";
+        s=s.replaceAll("[a-zA-Z]","");
+        t=t.replaceAll("[a-zA-Z]","");
+        Float val1=Float.parseFloat(s);
+        Float val2=Float.parseFloat(t);
+        System.out.println("output:"+val1+val2);
     }
 }

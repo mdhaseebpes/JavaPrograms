@@ -11,10 +11,14 @@ public class PrintNumberOnly {
         System.out.println("output: " +val1 + " " + val2);
 
 
-        String s2 = "Abb%^&*5.5QA";
+        String s2 = "Abb5.5QA";
+        String s3 = "!@#4.5";
 
         s2 = s2.replaceAll("[a-zA-Z]","");
+        s3 = s3.replaceAll("[!@#]","");
+
         Float value = Float.parseFloat(s2);
-        System.out.println(value);
+        Float value1 = Float.parseFloat(s3);
+        System.out.println(value+value1);
     }
 }

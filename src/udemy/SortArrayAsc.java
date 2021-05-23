@@ -1,6 +1,7 @@
 package udemy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class SortArrayAsc {
 
@@ -29,5 +30,6 @@ public class SortArrayAsc {
         int[] a = {4,7,1,3,9,2};
 
         SortArrayAsc.ascSort(a);
+
     }
 }
