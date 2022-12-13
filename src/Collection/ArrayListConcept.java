@@ -12,6 +12,7 @@ public class ArrayListConcept {
      * Insertion happens in order on the base of Indexes
      * Can access random values as it stores values on the base of index
      *  In order to access the values from Array list can use - for loop and Iterator
+     *  It is not synchronized
      */
 
 /*
@@ -19,8 +20,10 @@ public class ArrayListConcept {
     ARRAYLIST- This class uses a dynamic array to store the elements in it. With the introduction of generics,this class supports the storage of all types of objects.
     LINKEDLIST-This class uses a doubly linked list to store the elements in it. Similar to the ArrayList, this class also supports the storage of all types of objects.
 
-    ARRAYLIST -Manipulating ArrayList takes more time due to the internal implementation. Whenever we remove an element, internally, the array is traversed and the memory bits are shifted.
-    LINKEDLIST-Manipulating LinkedList takes less time compared to ArrayList because, in a doubly-linked list, there is no concept of shifting the memory bits. The list is traversed and the reference link is changed.
+    ARRAYLIST -Manipulating ArrayList takes more time due to the internal implementation. Whenever we remove an element, internally,
+    the array is traversed and the memory bits are shifted.
+    LINKEDLIST-Manipulating LinkedList takes less time compared to ArrayList because, in a doubly-linked list, there is no concept of shifting the memory bits.
+    The list is traversed and the reference link is changed.
 
     ARRAYLIST -This class implements a List interface. Therefore, this acts as a list.
     LINKEDLIST-This class implements both the List interface and the Deque interface. Therefore, it can act as a list and a deque.
@@ -58,8 +61,8 @@ public class ArrayListConcept {
 
     ArrayList<String> list  = new ArrayList<String>();
 
-    list.add("A");
-    list.add("B");
+        list.add("A");
+        list.add("B");
         list.add("QA");
         list.add("QA");
         System.out.println(list);
@@ -95,6 +98,7 @@ public class ArrayListConcept {
         list.stream().forEach(ele -> System.out.println(ele));
 
 
+        System.out.println("****************************************");
         Iterator<String> l1 = list.iterator();
         while (l1.hasNext())
         {

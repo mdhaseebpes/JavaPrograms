@@ -6,7 +6,7 @@ public class EachWordReverse {
         /**
          * Each word reverse
          */
-        String s = "Java Programming";
+        String s = "Hello World ";
         String reverseWord = "";
 
         String[] words = s.split(" ");

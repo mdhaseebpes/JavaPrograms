@@ -2,20 +2,33 @@ package udemy;
 
 public class PyramidPattern {
 
-    public static void main(String[] args) {
+      static  int  n =5;
+    static int num = 1;
+        public static void main(String args[]){
 
-        System.out.println("**********");
-
-        for(int i =1;i<=5;i++)
-        {
-            for(int j=1;j<=i;j++)
+            // n in this case
+            for(int i=0; i<n; i++)
             {
-                System.out.print(i + " ");
-                System.out.print("\t");
-            }
-            System.out.println();
-        }
 
-        System.out.println("**********");
+                // without re assigning num
+                if(num==10) {
+                    break;
+                }
+                for(int j=0; j<=i; j++)
+                {
+                    // printing num with a space
+
+                        System.out.print(num + " ");
+
+                        // incrementing num at each column
+                        num = num + 1;
+
+
+
+                }
+
+                // ending line after each row
+                System.out.println();
+            }
+        }
     }
-}

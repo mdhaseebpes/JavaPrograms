@@ -1,6 +1,8 @@
 package udemy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class BubbleSort {
     public static void main(String[] args) {
@@ -17,5 +19,16 @@ public class BubbleSort {
             }
         }
         System.out.println("sorted array " + Arrays.toString(a));//print array
+
+        List<Integer> i = new ArrayList<>();
+        i.add(100);
+        i.add(10);
+        i.add(6);
+
+        System.out.println(i);
+
+        int a1[] = {1, 10, 4, 55, 6, 34, 23, 21, 5, 100};
+        Arrays.sort(a1);
+        System.out.println(Arrays.toString(a1));
     }
 }

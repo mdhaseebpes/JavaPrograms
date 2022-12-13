@@ -1,10 +1,24 @@
 package udemy;
 
 import java.util.Arrays;
+public class AnagramReverse {
 
-public class Anagram {
+    static int show(){
+        try{
+            int i= 5/0;
+           return 1;
+        }catch(Exception e){
+            return 2;
+        }finally {
+            return 3;
+        }
+
+    }
 
     public static void main(String[] args) {
+
+       int result = show();
+        System.out.println(result);
 
         String str1 = "stop";
         String str2 = "tops";
@@ -23,5 +37,8 @@ public class Anagram {
        {
            System.out.println("Strings are not Anagram");
        }
+
+
+
     }
 }

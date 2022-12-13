@@ -22,8 +22,6 @@ public class MatchingValueArray {
         }
 
     }
-
-
     public static void main(String[] args) {
 
         int a[] = {1, 4 ,8 ,9 ,0};

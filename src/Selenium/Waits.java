@@ -1,6 +1,6 @@
 package Selenium;
 
-import com.sun.jna.platform.FileUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static com.sun.jna.platform.FileUtils.*;
+
 
 public class Waits {
 

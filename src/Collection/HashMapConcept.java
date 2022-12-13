@@ -18,12 +18,9 @@ public class HashMapConcept {
      */
 
     public static void main(String[] args) {
-
-
         Employee emp = new Employee("A", 1, "QA");
         Employee emp1 = new Employee("B", 2, "Dev");
         Employee emp2 = new Employee("C", 3, "Admin");
-
 
         HashMap<Integer, Employee> h = new HashMap<Integer, Employee>();
 
@@ -39,31 +36,22 @@ public class HashMapConcept {
             Employee e = e1.getValue();
 
             System.out.println(key + " Info " + e.name + " " + e.age + " " + e.dept);
-
         }
-
         System.out.println("******************");
-
         HashMap<Integer, String> hm = new HashMap<Integer, String>();
-
         hm.put(1, "Aliza");
         hm.put(5, "Aliza");
         hm.put(2, "3 years");
         hm.put(3, "Girl");
-        hm.replace(2, "4 years");
-
+        hm.replace(2, "Aliza");
         for (Map.Entry e : hm.entrySet()) {
             System.out.println(e.getKey() + " " + e.getValue());
         }
-
         if (hm.containsValue("Aliza"))
             System.out.println("Value is found");
         System.out.println(hm);
-
         System.out.println("******************* Clone");
-
         HashMap<Integer, String> hm1 = new HashMap<Integer, String>();
-
         hm1 = (HashMap<Integer, String>) hm.clone();
 
         for (Map.Entry e : hm1.entrySet()) {
@@ -95,16 +83,41 @@ public class HashMapConcept {
             System.out.println("Key = " + Key + " Value =" + Value);
         }
         System.out.println("****************************************** entryset");
-
         //iterate using   and for each loop
         for (Map.Entry<String, String> e1 : capital.entrySet()) {
             System.out.println("Key = " + e1.getKey() + " Value =" + e1.getValue());
         }
-
         System.out.println("****************************************** lambda");
-
         //iterate hashmap using java 8 for each and lambda
         capital.forEach((k, v) -> System.out.println("Key = " + k + " Value =" + v));
+
+        HashMap<String, String> capital1 = new HashMap<String, String>();
+
+        capital1.put("India", "Delhi");
+        capital1.put("USA", "Washington");
+        capital1.put("UK", "London");
+        capital1.put("UK", "London11");
+        capital1.put(null, "Bangalore");
+        capital1.put(null, "Mysore");
+        capital1.put(null, null);
+        capital1.put("France", null);
+        capital1.put("Russia", null);
+        capital1.put("India", "Delhi");
+
+      Iterator<String> it2=  capital1.keySet().iterator();
+      while (it2.hasNext()){
+         String keyV = it2.next();
+         String val =capital1.get(keyV);
+          System.out.println("key = " + keyV + " value = " + val);
+
+      }
+
+      Iterator<Map.Entry<String,String>> it3 = capital1.entrySet().iterator();
+      while(it3.hasNext()){
+        Map.Entry<String,String> keyValue = it3.next();
+          System.out.println("Key Value --" + keyValue.getKey() + "  " + keyValue.getValue());
+
+      }
 
 
     }

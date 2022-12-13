@@ -9,7 +9,7 @@ public class BinarySearch {
     public static void main(String[] args) {
       //  int a[] = {1, 3, 4, 55, 6, 34, 23, 21, 5, 6};
         int a[] = {4,8,18,30,55,88,99};
-        int searchEle = 4;
+        int searchEle = 55;
         boolean flag  = false;
         int l = 0;
         int h = a.length - 1;

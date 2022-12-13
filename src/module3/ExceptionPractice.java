@@ -2,17 +2,10 @@ package module3;
 
 public class ExceptionPractice {
 
-    /**
-     * try block along finally is possible without catch block
-     * try{
-     *    int  i = 9/0
-     * }
-     * finally{
-     *      system.out.println("possible")
-     * }
-     *
-     *
-     */
+
+     //try block along finally is possible without catch block
+
+
 
     public void m1()
     {
@@ -62,7 +55,11 @@ public class ExceptionPractice {
         System.out.println(ExceptionPractice.getMarks("tom"));
 
         try {
-            obj.m1();
+            try {
+                obj.m1();
+            }catch (Exception ex){
+
+            }
         }
         catch(ArithmeticException e )
         {
@@ -90,7 +87,13 @@ public class ExceptionPractice {
 
         System.out.println("Exception related to finally block");
 
-
+        System.out.println("**************");
+        try{
+            int  i = 9/0;
+        }
+        finally{
+            System.out.println("possible");
+        }
 
 
     }

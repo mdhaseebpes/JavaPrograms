@@ -39,6 +39,7 @@ public class CountStringOccurence {
         t=t.replaceAll("[a-zA-Z]","");
         Float val1=Float.parseFloat(s);
         Float val2=Float.parseFloat(t);
-        System.out.println("output:"+val1+val2);
+        float result  = val1 + val2;
+        System.out.println("output:" + result);
     }
 }

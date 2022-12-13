@@ -1,10 +1,5 @@
 package com.programs.session6;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.Test;
-
 class Animal{
     final String s1 = "first class";
 

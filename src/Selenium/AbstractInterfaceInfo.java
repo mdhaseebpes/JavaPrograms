@@ -1,6 +1,6 @@
 package Selenium;
 
-public abstract class Concept {
+public abstract class AbstractInterfaceInfo {
     /**
      * Note:
      -	An abstract class can have any number of abstract method as well as concrete methods or only concrete methods or only abstract method
@@ -61,7 +61,11 @@ public abstract class Concept {
    //Cannot create abstract static methods
   // abstract  static void paint();
 
-    Concept()
+    final void da(){
+
+    }
+
+    AbstractInterfaceInfo()
     {
         System.out.println("abstract call constructor");
     }
