@@ -7,7 +7,6 @@ import java.util.Collections;
 public class ArrayListMethods {
 
     public static void main(String[] args) {
-
         ArrayList<String> ar1 = new ArrayList<String>();
 
         ar1.add("Test");
@@ -46,11 +45,6 @@ public class ArrayListMethods {
 
         a3.retainAll(a4);
         System.out.println(a3);
-
-
-
-
-
 
     }
 }

@@ -58,7 +58,7 @@ public class HashMapCompare {
         System.out.println("*********Compare values using HashSet");
         System.out.println(new HashSet<String>(map4.values()).equals(new HashSet<String>(map5.values())));
 
-        System.out.println("**********Compare values using ArrayList");
+        System.out.println("**********Compare values using ArrayListConcept");
         System.out.println(new ArrayList<String>(map4.values()).equals(new ArrayList<>(map5.values())));
 
 

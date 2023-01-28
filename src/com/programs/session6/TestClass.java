@@ -1,5 +1,7 @@
 package com.programs.session6;
 
+import com.github.javafaker.Faker;
+
 class Animal{
     final String s1 = "first class";
 
@@ -15,8 +17,9 @@ class Mammal extends Animal{
 public class TestClass  extends Mammal{
 
 
-
     public static void main(String[] args) {
+
+
 
         //upcasting
 

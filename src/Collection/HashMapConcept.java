@@ -1,8 +1,10 @@
 package Collection;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class HashMapConcept {
 
@@ -10,7 +12,7 @@ public class HashMapConcept {
      * HashMap class implements Map Interface
      * HashMap stores data in Key and value pair
      * HashMap does not contain duplicate values i.e. contains unique values
-     * HashMap contains one null key and multiple null values
+     * HashMap contains one null key and multiple null values -- index of null key is 0 --> Hashcode of null key is also 0
      * HashMap does not maintain order
      * HashMap is non synchronized  - Not thread safe
      * i.e. hashmap can be accessed by multiple threads at a time
@@ -119,6 +121,17 @@ public class HashMapConcept {
 
       }
 
+        //converting to synchronized map
+        Map<String,String> syncCapitalMap =  Collections.synchronizedMap(capital);
+        System.out.println(syncCapitalMap);
+
+        //concurrent hash Map : does not throw any ConcurrentModificationException
+        ConcurrentHashMap capital12 = new ConcurrentHashMap();
+        capital12.put("India" ,"New Delhi");
+        capital12.put("Karnataka" ,"Bengaluru");
+        capital12.put("Kerala","Kochi");
+
+        System.out.println(capital12);
 
     }
 }

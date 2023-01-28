@@ -6,15 +6,16 @@ public class CountStringOccurence {
 
     public static void main(String[] args) {
 
-        String occurence = "AUTOMATIONENGINEER";
+        String word = "AUTOMATION ENGINEER TEST";
+       String occurence=word.replaceAll(" ","");
         ArrayList<Character> list  = new ArrayList<Character>();
 
         for(int i=0;i<occurence.length();i++){
             int k=0;
             if(!list.contains(occurence.charAt(i)))
             {
-                list.add(occurence.charAt(i));
-                k++;
+                    list.add(occurence.charAt(i));
+                    k++;
 
                 for(int j=i+1;j<occurence.length();j++)
                 {
@@ -28,11 +29,6 @@ public class CountStringOccurence {
 
         }
 
-        String s1 = "AUTOMATIONENGINEER";
-       for(int i=0;i<s1.length();i++)
-       {
-
-       }
 
         String s="oraclE9.9",t="java6.7";
         s=s.replaceAll("[a-zA-Z]","");
