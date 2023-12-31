@@ -1,7 +1,11 @@
 package com.programs.session6;
 
 
-public  class first {
+import udemy.CountStringArray;
+
+public  class first{
+
+
 
     public void brush(){
         System.out.println("first class paint");
@@ -29,6 +33,14 @@ public  class first {
     public static void main(String[] args) {
         first fi = new first();
         fi.theInvalidCityErrorIsDisplayed();
+
+        CountStringArray countStringArray = new CountStringArray();
+        //countStringArray.dummy();
+
+        String[] ar1 = {"Apple", "Orange", "Mango", "Apple", "Mango", "Orange", "Orange"};
+        countStringArray.printCount(ar1);
+        //System.out.println(name);
+
 
 
     }

@@ -15,7 +15,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class BrokenLinks {
+public class BrokenLinks  {
 
    static  String homepage = "https://www.wikihow.com/Play-Skribbl.io";
 
@@ -43,6 +43,7 @@ public class BrokenLinks {
         }
 
     }
+
 
 
     public static void main(String[] args) {

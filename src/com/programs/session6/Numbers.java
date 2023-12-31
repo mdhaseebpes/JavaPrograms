@@ -7,7 +7,7 @@ import java.util.Scanner;
 
  class Numbers extends  TestClass{
 
-    void color(){
+     public void color(){
 
     }
 

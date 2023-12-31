@@ -13,6 +13,7 @@ public class HashMapConcept {
         HashMap<String,String> capital = new HashMap<>();
         capital.put("India" ,"New Delhi");
         capital.put("Karnataka" ,"Bengaluru");
+        capital.put("Mysore" ,null);
         capital.put("Kerala","Kochi");
         capital.put("Goa",null);
         capital.put(null,"patna");
@@ -22,7 +23,7 @@ public class HashMapConcept {
        while (it.hasNext()){
          String key =  it.next();
         String value  = capital.get(key);
-           System.out.println("key = " + key + " value = " + value);
+        System.out.println("key = " + key + " value = " + value);
        }
 
         System.out.println("----------------------");
@@ -47,6 +48,5 @@ public class HashMapConcept {
         capital1.put("Kerala","Kochi");
 
         System.out.println(capital1);
-
     }
 }

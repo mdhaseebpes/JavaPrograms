@@ -13,7 +13,8 @@ public class ArrayListMethods {
         list.add("Java");
         list.add("C");
         list.add("Python");
-        list.add("Ruby");
+        list.add(null);
+        list.add(null);
 
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("Web");

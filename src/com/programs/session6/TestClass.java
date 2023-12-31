@@ -16,6 +16,9 @@ class Mammal extends Animal{
 
 public class TestClass  extends Mammal{
 
+     void color(){
+
+    }
 
     public static void main(String[] args) {
 

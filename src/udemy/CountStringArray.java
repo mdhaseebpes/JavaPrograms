@@ -3,9 +3,19 @@ package udemy;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class CountStringArray {
+ public class CountStringArray {
 
-    public static void printCount(String[] ar){
+     protected  String name = "A";
+
+     public CountStringArray() {
+     }
+
+     protected void dummy(){
+         System.out.println("test");
+     }
+
+
+    public void printCount(String[] ar){
 
         Map<String, Integer> output = new LinkedHashMap<String,Integer>();
 
@@ -27,9 +37,12 @@ public class CountStringArray {
 
     public static void main(String[] args) {
 
+         CountStringArray countStringArray = new CountStringArray();
+
+
         String[] ar = {"Apple", "Orange", "Mango", "Apple", "Mango", "Orange", "Orange"};
 
-        printCount(ar);
+        countStringArray.printCount(ar);
 
     }
 

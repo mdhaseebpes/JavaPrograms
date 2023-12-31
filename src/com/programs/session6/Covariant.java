@@ -10,21 +10,24 @@ class Test {
     int data = 100;
 
     Test demoMethod() {
+        System.out.println(data);
         return this;
     }
 }
 
 public class Covariant extends Test {
 
-
     int data = 1000;
 
     Covariant demoMethod() {
+        System.out.println(data);
         return this;
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Covariant sam = new Covariant();
-        System.out.println(sam.demoMethod().data);
+        System.out.println(sam.demoMethod());
     }
+
+
 }

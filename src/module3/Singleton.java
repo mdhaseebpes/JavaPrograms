@@ -6,14 +6,17 @@ public class Singleton {
     public String s;
 
     private Singleton() {
+
         s = "Hello I am a string part of Singleton class";
     }
 
     public static Singleton getInstance() {
         if (singleton == null) {
-            singleton = new Singleton();
+          return   singleton = new Singleton();
+        }else{
+            return singleton;
         }
-        return singleton = new Singleton();
+
 
     }
 

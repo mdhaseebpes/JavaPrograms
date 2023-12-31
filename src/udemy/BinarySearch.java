@@ -5,35 +5,44 @@ import java.util.Arrays;
 
 public class BinarySearch {
 
+    public static int BinarySearch(int[] arr,int x){
+        int low = 0;
+        int high = arr.length-1;
+
+        while(low<=high){
+            int mid = (low+high)/2;
+            if(arr[mid]==x){
+                return mid;
+            } else if (arr[mid]<x) {
+                low = mid+1;
+            } else{
+                high = mid-1;
+            }
+        }
+        return -1;
+    }
 
     public static void main(String[] args) {
-      //  int a[] = {1, 3, 4, 55, 6, 34, 23, 21, 5, 6};
-        int a[] = {4,8,18,30,55,88,99};
-        int searchEle = 55;
-        boolean flag  = false;
-        int l = 0;
-        int h = a.length - 1;
-     // Arrays.sort(a);
-       while(l<=h)
-       {
-           int mid = (l+h)/2;
-           if(a[mid]==searchEle)
-           {
-               System.out.println("Number is found at index " + (+ mid + +1)+ "--" + searchEle);
-               flag=true;
-               break;
-           }
-           else if(searchEle < a[mid]){
-               h = mid -1;
-           }
-           else
-               l = mid+1;
-       }
-        /*
-        Approach 2 using Arrays
-         */
-        int pos = Arrays.binarySearch(a, 55);
-        System.out.println("found at index:" + pos);
+       /* Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter integers separated by comma");
+        String input  = scanner.nextLine();
+
+      String[] strArr =  input.split(",");
+
+        int[] arr1 = new int[strArr.length];
+        for(int i=0; i< arr1.length;i++){
+            arr1[i]=Integer.parseInt(strArr[i]);
+        }
+*/
+        int[] arr1 = {77, 33, 44, 12, 4, 79, 90, 34,55};
+        System.out.println(Arrays.toString(arr1));
+
+        Arrays.sort(arr1);
+
+        System.out.println(Arrays.toString(arr1));
+
+        int index =  BinarySearch(arr1, 4);
+        System.out.println("index is " + index);
     }
 }
 

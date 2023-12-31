@@ -10,10 +10,10 @@ public class ArrayListConcept {
 
         ArrayList<Object> arrayList = new ArrayList<Object>();
         arrayList.add("test");
-        arrayList.add(400);
+        arrayList.add(null);
         arrayList.add(500);
         arrayList.add(true);
-        arrayList.add(12.33);
+        arrayList.add(null);
         arrayList.add('a');
 
         System.out.println(arrayList.size());
@@ -64,4 +64,6 @@ public class ArrayListConcept {
 
 
     }
+
+
 }

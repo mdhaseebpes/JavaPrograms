@@ -3,16 +3,15 @@ package Collection;
 import java.util.*;
 
 public class HashTableConcept {
-
     /**
      * HashTable does not allow duplicate values combination of both Key and Value
      * HashTable is synchronized i.e. thread Safe
      * No NULL KEY and VALUE in HashTable  - will get Null Pointer Exception
      * *
      */
-
 /*    HashMap	Hashtable
-1) HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code.
+1) HashMap is non synchronized. It is not-thread safe and can't be shared between
+many threads without proper synchronization code.
     Hashtable is synchronized. It is thread-safe and can be shared with many threads.
         2) HashMap allows one null key and multiple null values.
     Hashtable doesn't allow any null key or value.
@@ -73,11 +72,8 @@ public class HashTableConcept {
         Set s =ht.entrySet();
         System.out.println("SET " + s);
 
-
         Hashtable<String,String> cap = new Hashtable<>();
-
         System.out.println("Enumeration hashtable");
-
         cap.put("1","Bangalore");
         cap.put("2","Chennai");
         cap.put("3","Delhi");
@@ -88,7 +84,6 @@ public class HashTableConcept {
         {
             System.out.println(en.nextElement());
         }
-
 
     }
 }

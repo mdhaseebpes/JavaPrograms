@@ -9,7 +9,7 @@ public class MinArray {
     public static int[] readIntegers(int count){
         int[] intA = new int[count];
         for(int i=0;i<intA.length;i++){
-            System.out.println("enter a number :" + intA[i]+1);
+            System.out.println("enter a number :" + (i+1));
             int number = scanner.nextInt();
             intA[i] = number;
         }

@@ -20,25 +20,8 @@ public class HashMapConcept {
      */
 
     public static void main(String[] args) {
-        Employee emp = new Employee("A", 1, "QA");
-        Employee emp1 = new Employee("B", 2, "Dev");
-        Employee emp2 = new Employee("C", 3, "Admin");
-
-        HashMap<Integer, Employee> h = new HashMap<Integer, Employee>();
-
-        h.put(1, emp);
-        h.put(2, emp1);
-        h.put(3, emp2);
 
 
-        System.out.println(h);
-
-        for (Map.Entry<Integer, Employee> e1 : h.entrySet()) {
-            int key = e1.getKey();
-            Employee e = e1.getValue();
-
-            System.out.println(key + " Info " + e.name + " " + e.age + " " + e.dept);
-        }
         System.out.println("******************");
         HashMap<Integer, String> hm = new HashMap<Integer, String>();
         hm.put(1, "Aliza");

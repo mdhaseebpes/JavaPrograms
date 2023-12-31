@@ -1,10 +1,6 @@
 package Collection;
 
-import sun.jvm.hotspot.utilities.Assert;
-import sun.jvm.hotspot.utilities.AssertionFailure;
-
 import java.util.HashMap;
-
 
 public class CompareHashMap {
 
@@ -17,9 +13,7 @@ public class CompareHashMap {
         map1.put("LIN TUNG YU4","PREFERRED MEMBER,");
         map1.put("CONFIDENTIAL USER3","PREFERRED MEMBER,");
 
-
         HashMap<String,String> map2 = new HashMap<>();
-
         map2.put("CONFIDENTIAL USER1","PREFERRED MEMBER,");
         map2.put("CONFIDENTIAL USER2","PREFERRED MEMBER,");
         map2.put("CHEN H L0","PREFERRED MEMBER,");

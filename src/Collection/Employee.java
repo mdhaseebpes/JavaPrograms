@@ -12,4 +12,24 @@ public class Employee {
         this.age =age;
         this.dept = dept;
     }
+
+    public static void main(String[] args) {
+        try
+        {
+            System.exit(1);
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println(e.getMessage());
+        }
+        catch(Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+        finally {
+            System.out.println("finally after system.exit");
+        }
+
+    }
 }

@@ -2,7 +2,7 @@ package udemy;
 
 public class Multiple35 {
     public static void printNumber(int number) {
-        for (int i = 1; i < number; i++) {
+        for (int i = 1; i <=number; i++) {
             int multiple3 = i % 3;
             int multiple5 = i % 5;
             if ((multiple3== 0) && (multiple5 == 0)) {

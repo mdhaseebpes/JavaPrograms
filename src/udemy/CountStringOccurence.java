@@ -16,7 +16,6 @@ public class CountStringOccurence {
             {
                     list.add(occurence.charAt(i));
                     k++;
-
                 for(int j=i+1;j<occurence.length();j++)
                 {
                     if(occurence.charAt(i)==occurence.charAt(j)){
@@ -30,12 +29,9 @@ public class CountStringOccurence {
         }
 
 
-        String s="oraclE9.9",t="java6.7";
-        s=s.replaceAll("[a-zA-Z]","");
-        t=t.replaceAll("[a-zA-Z]","");
-        Float val1=Float.parseFloat(s);
-        Float val2=Float.parseFloat(t);
-        float result  = val1 + val2;
-        System.out.println("output:" + result);
+
+
+
+
     }
 }

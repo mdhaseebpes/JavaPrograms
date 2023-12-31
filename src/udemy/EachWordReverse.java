@@ -1,12 +1,17 @@
 package udemy;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class EachWordReverse {
 
     public static void main(String[] args) {
         /**
          * Each word reverse
          */
-        String s = "Hello World ";
+        String s = "Hello World a Continue aa weee";
         String reverseWord = "";
 
         String[] words = s.split(" ");
@@ -24,7 +29,20 @@ public class EachWordReverse {
              reverseWord = reverseWord + reverse + " ";
         }
 
-        System.out.println(reverseWord);
+      //  System.out.println(reverseWord);
+
+        List<String> wordList = new ArrayList<>();
+        for(String word: words){
+            wordList.add(word);
+        }
+
+
+        Collections.sort(wordList, Comparator.comparingInt(String::length));
+
+        // Print the sorted words
+        for (String word : wordList) {
+            System.out.print(word + " ");
+        }
 
         /**
          * Sentence reverse
